@@ -8,8 +8,8 @@
       function mas(){acc= num.value; op="+";}
       function menos(){acc= num.values; op="-";}
       function cuadrado(){acc= num.values; op="X^2";calcular();}
-      function inverso(){acc= num.values; op="1/X";calcular();}
-      function raizCuadrada(){acc= num.values; op="sqrt(X)";calcular();}
+      
+      function raizCuadrada(){acc= num.values; op="raizCuadrada(X)";calcular();}
       function potencia2(){acc= num.values; op="2^X";calcular();}
       function limpiar(){num.value="";}
       function factorial(){acc= num.values; op="X!";calcular();}
@@ -27,8 +27,8 @@
         if (op==="+"){num.value=(+acc + +num.value);}
          if (op==="-"){num.value=(+acc + -num.value);}
          if (op==="X^2"){num.value= num.value* num.value;}
-         if (op==="1/X"){num.value= 1/num.value;}
-         if (op==="sqrt(X)"){num.value= Math.sqrt(num.value);}
+         
+         if (op==="raizCuadrada(X)"){num.value= Math.sqrt(num.value);}
          if (op==="2^X"){num.value= Math.pow(2,num.value);}
          if (op==="X!"){num.value= factorialHacer(num.value);}
           if (op==="pentera"){num.value= Math.floor(num.value);}
@@ -45,8 +45,8 @@
       <button id="suma" onClick="mas()">+</button>
       <button id="resta" onClick="menos()">-</button>
       <button id="cuadrado" onClick="cuadrado()">X^2</button>
-      <button id="inverso" onClick="inverso()">1/X</button>
-      <button id="raiz" onClick="raizCuadrada()">sqrt(X)</button>
+     
+      <button id="raiz" onClick="sqrt()">sqrt(X)</button>
       <button id="potencia2" onClick="potencia2()">2^X</button>
       <button id="igual" onClick="calcular()">=</button>
       <button id="limpiar" onClick="limpiar()">Limpiar</button>
